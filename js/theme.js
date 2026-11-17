@@ -1,0 +1,1 @@
+(()=>{try{const theme=localStorage.getItem('sawa-theme');if(theme==='dark'||theme==='light')document.documentElement.dataset.theme=theme}catch(error){console.warn('Unable to load the saved theme preference.',error)}})();
