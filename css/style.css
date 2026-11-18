@@ -273,3 +273,4 @@ input,select,textarea{font:inherit;width:100%;padding:24px 16px 8px;border:2px s
 :root[data-theme="dark"] .pl i{background:#26364e}
 @media(max-width:900px){:root[data-theme="dark"] #nv{background:#142239}}
 @media(max-width:560px){#theme-toggle{padding:9px;width:42px;height:42px}#theme-toggle span{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}}
+#bg .ic,#theme-toggle .ic{pointer-events:none}

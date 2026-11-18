@@ -21,7 +21,7 @@ q('#ft').innerHTML=`<div class="wrap"><div class="fg"><div><b>${C.name}</b><p>${
 const menu=q('#bg'),nav=q('#nv'),setMenu=open=>{nav.classList.toggle('open',open);menu.setAttribute('aria-expanded',String(open));menu.setAttribute('aria-label',open?'Fermer le menu':'Ouvrir le menu');menu.innerHTML=ic(open?'x':'menu')};
 menu.setAttribute('aria-controls','nv');menu.setAttribute('aria-expanded','false');menu.setAttribute('aria-label','Ouvrir le menu');menu.onclick=()=>setMenu(!nav.classList.contains('open'));
 nav.addEventListener('click',e=>{if(e.target.closest('a'))setMenu(false)});
-d.addEventListener('click',e=>{if(!e.target.closest('.hb'))setMenu(false)});
+d.addEventListener('click',e=>{const hb=q('.hb');if(!e.composedPath().includes(hb))setMenu(false)});
 d.addEventListener('keydown',e=>{if(e.key==='Escape'&&nav.classList.contains('open')){setMenu(false);menu.focus()}});
 addEventListener('resize',()=>{if(innerWidth>900)setMenu(false)});
 qa('[data-i]').forEach(e=>e.outerHTML=ic(e.dataset.i));
