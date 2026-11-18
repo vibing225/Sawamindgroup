@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sawamind-group.com/sitemap.xml
+Sitemap: https://sawa-mindgroup.com/sitemap.xml
